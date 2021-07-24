@@ -1,0 +1,109 @@
+/* Declarar uma variável Global no CSS */
+
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+
+/* CSS reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base site */
+
+body {
+    background: var(--preto); /*chamar a variável "preto"*/
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+header .container {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    font-family: 'Arial Black';
+    color: var(--vermelho);
+    font-size: 2.2em;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 5px;
+}
+
+header nav a:hover {
+    color: #fff;
+    transition: .8s ease all;
+}
+
+/* filme em destaque */
+
+.filme-principal {
+    font-size: 1em;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-re.jpg');
+    height: 25rem;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .description {
+    margin-top: 1%;
+    font-size: .9em;
+    margin-bottom: 5%;
+}
+
+.title {
+    margin-top: 15%;
+    font-size: 2.5em;
+}
+
+button {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: .7em;
+    cursor: pointer;
+    transition: .4s ease all;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+.button i {
+    margin-right: .3rem;
+}
+
+.container {
+    margin-left: 5%;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filme {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 10px;
+}
